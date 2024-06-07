@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+.container {
+	display: flex;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+	max-height: 640px;
+}
+
+.image-section {
+	display: none;
+	/* height: 100%; */
+}
+
+.image-section img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.form-section {
+	background: white;
+	padding: 40px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 300px;
+}
+
+.form-section h2 {
+	margin-bottom: 5px;
+	font-size: 24px;
+	color: #333;
+}
+
+.form-section form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-section label {
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 3px;
+	color: #555;
+}
+
+.form-section input {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.checkbox-container input {
+	margin-right: 10px;
+}
+
+.checkbox-container label {
+	font-size: 12px;
+}
+
+button {
+	padding: 10px;
+	background: linear-gradient(to right, #ff758c, #ff7eb3);
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+button:hover {
+	background: linear-gradient(to right, #ff7eb3, #ff758c);
+}
+
+.endredirect-txt {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #555;
+	text-align: center;
+}
+
+.sign-in {
+	font-size: 12px;
+	color: #555;
+	transition: all 150ms ease-in;
+	/* text-decoration: none; */
+	/* text-align: center; */
+}
+
+.sign-in:hover {
+	/* text-decoration: underline; */
+	color: blue;
+}
+
+.error-msg {
+	color: red;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+	.container {
+		width: 800px;
+	}
+
+	.image-section {
+		display: block;
+		width: 50%;
+	}
+
+	.form-section {
+		width: 50%;
+	}
+}
+

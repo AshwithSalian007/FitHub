@@ -1,0 +1,45 @@
+body {
+    /* background: linear-gradient(to bottom right, #000000, #5a5a5a, #000000); */
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 0;
+}
+.main-container > a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 150ms ease-in-out;
+}
+.main-container > a:hover {
+    transform: scale(1.1);
+}
+
+.main-container .container-child {
+    background-color: black;
+    background-size: cover;
+    padding: 20px 50px;
+    border-radius: 8px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    min-width: 280px;
+}
+.main-container .container-child h2 {
+    font-size: 36px;
+}
+.main-container .container-child p {
+    font-size: 22px;
+    font-weight: 600;
+}
+.main-container .child1 {
+    background-image: url('./../../assets/muscle-bg.webp');
+    background-position: center;
+}
+.main-container .child2 {
+    background-image: url('./../../assets/exercise-bg.png');
+}
+.main-container .child3 {
+    background-image: url('./../../assets/user-bg.png');
+}

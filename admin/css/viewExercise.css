@@ -1,0 +1,42 @@
+.main-container {
+    background-color: white;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+}
+.exercise-list-container table {
+    border-collapse: collapse;
+}
+.exercise-list-container table td, th {
+    text-align: center;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    padding: 4px 8px;
+    font-size: 14px;
+}
+.exercise-list-container table td img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+.exercise-list-container table td a.action-btn {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.exercise-list-container table td a.update {
+    background-color: blue;
+}
+.exercise-list-container table td a.delete {
+    background-color: red;
+}
+td.description p {
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    max-width: 300px;
+    max-height: 90px;
+    line-height: 18px;
+}

@@ -1,0 +1,82 @@
+.main-container {
+    max-width: 90%;
+    width: max-content;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0, 0, 10px rgba(48, 48, 48, 0.466);
+}
+
+.main-container .page-navigation-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 20px;
+}
+.main-container .page-navigation-container .page-arrow-nav-bx {
+    display: flex;
+    gap: 4px;
+}
+
+.main-container .page-navigation-container .page-arrow-nav-bx a {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    /* vertical-align: middle; */
+    font-weight: bold;
+    padding: 1px 8px 4px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(113, 113, 113, 0.5);
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.main-container .page-navigation-container .page-arrow-nav-bx a:hover {
+    background-color: #e1e1e1;
+}
+.main-container .page-navigation-container .page-arrow-nav-bx a.disabled {
+    cursor: not-allowed;
+    background-color: rgb(173, 173, 173);
+    color: gray;
+}
+
+.main-container .muscle-group-list-container {
+    width: 100%;
+}
+.main-container .muscle-group-list-container table {
+    border-collapse: collapse;
+    margin: auto;
+}
+.main-container .muscle-group-list-container table th, td {
+    border: 2px solid rgba(59, 59, 59, 0.5);
+    padding: 5px 10px;
+    word-wrap: break-word;
+    max-width: 180px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.main-container .muscle-group-list-container table td img.muscleimg {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.main-container .muscle-group-list-container table td div.actionBtnContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.main-container .muscle-group-list-container table td a.updateMuscleBtn, a.deleteMuscleBtn {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.main-container .muscle-group-list-container table td a.updateMuscleBtn {
+    background-color: rgb(255, 149, 0);
+}
+
+.main-container .muscle-group-list-container table td a.deleteMuscleBtn {
+    background-color: rgb(255, 0, 0);
+}

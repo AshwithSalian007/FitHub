@@ -1,0 +1,38 @@
+.main-container {
+    background-color: white;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+}
+.main-container table {
+    border-collapse: collapse;
+}
+.main-container table td, th {
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    text-align: center;
+    padding: 5px 8px;
+    max-width: 140px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+.main-container table td.email {
+    max-width: 200px;
+}
+.main-container table td.message {
+    max-width: 350px;
+}
+.main-container table .mark-read-btn {
+    padding: 4px 8px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.main-container table .mark-read-btn:disabled {
+    background-color: rgb(204, 204, 204);
+    cursor: not-allowed;
+}
+.main-container table tr.seen {
+    color: rgb(166, 166, 166);
+}
